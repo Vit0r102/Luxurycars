@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryCars - Carros de Luxo | Venda e Aluguel</title>
+    <meta name="description" content="Descubra nossa coleção exclusiva de carros de luxo para venda e aluguel. Mercedes-Benz, BMW, Audi, Porsche e muito mais.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://luxurycars.com/">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="nav-logo" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 7h-2V6a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H5a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1z"/>
+                </svg>
+                <a href="home.html" class="brand-text">LuxuryCars</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="home.html" class="nav-link active">Início</a>
+                <a href="venda.html" class="nav-link">Venda</a>
+                <a href="aluguel.html" class="nav-link">Aluguel</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+
+            <div class="nav-buttons">
+                <p id="user-info" style="color:white; margin-right:10px;"></p>
+<button onclick="logout()" class="btn btn-outline">Sair</button>
+                <button class="btn btn-outline">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    
+                    (11) 9999-9999
+                </button>
+                <a href="formulario.html" class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Contato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Carros de <span class="text-primary">Luxo</span>
+                        <br>
+                        Venda & Aluguel
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Descubra a nossa coleção exclusiva de veículos premium. 
+                        Qualidade, elegância e performance em cada detalhe.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="venda.html" class="btn btn-primary btn-lg luxury-glow">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 7h-2V6a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H5a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1z"/>
+                            </svg>
+                            Ver Carros à Venda
+                        </a>
+                        <a href="aluguel.html" class="btn btn-outline btn-lg">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            Aluguel de Luxo
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">
+                                <svg class="stat-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                500+
+                            </div>
+                            <p class="stat-label">Veículos Premium</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">
+                                <svg class="stat-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                100%
+                            </div>
+                            <p class="stat-label">Garantia de Qualidade</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">
+                                <svg class="stat-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 7h-2V6a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H5a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1z"/>
+                                </svg>
+                                24/7
+                            </div>
+                            <p class="stat-label">Suporte Exclusivo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="venda.html" class="scroll-arrow">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    </main>
+
+        <footer class="footer">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="nav-logo" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 7h-2V6a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H5a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1z"/>
+                        </svg>
+                        <span class="brand-text">LuxuryCars</span>
+                    </div>
+                    <p class="footer-description">
+                        Sua concessionária de confiança para carros de luxo. 
+                        Qualidade, elegância e performance em cada veículo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="venda.html">Venda de Carros</a></li>
+                        <li><a href="aluguel.html">Aluguel de Luxo</a></li>
+                        <li><a href="#">Test Drive</a></li>
+                        <li><a href="#">Financiamento</a></li>
+                        <li><a href="#">Seguro</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Marcas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mercedes-Benz</a></li>
+                        <li><a href="#">BMW</a></li>
+                        <li><a href="#">Audi</a></li>
+                        <li><a href="#">Porsche</a></li>
+                        <li><a href="#">Ferrari</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contato@luxurycars.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Av. Paulista, 1000 - SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxuryCars. Todos os direitos reservados. 
+                    Feito por Vitor Melo</p>
+            </div>
+        </div>
+    </footer>
+        <script>
+async function verificarUsuario() {
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    window.location.href = "/index.html";
+    return;
+  }
+
+  try {
+    const res = await fetch("/api/auth/profile", {
+      headers: {
+        "Authorization": "Bearer " + token
+      }
+    });
+
+    const data = await res.json();
+
+document.body.style.display = "block";
+
+document.getElementById("user-info").innerText =
+  data.user.email;
+
+    console.log("JWT:", data);
+
+    if (data.msg === "Token inválido" || data.msg === "Acesso negado") {
+      localStorage.removeItem("token");
+      window.location.href = "/index.html";
+      return;
+    }
+
+    // 👇 MOSTRA USUÁRIO NA NAVBAR
+    document.getElementById("user-info").innerText =
+      data.user.email;
+
+  } catch (error) {
+    console.error("Erro:", error);
+  }
+}
+
+function logout() {
+  localStorage.removeItem("token");
+  window.location.href = "/index.html";
+}
+
+verificarUsuario();
+</script>    
+    <script src="/assets/script.js"></script>
+</body>
+</html>                                                      
