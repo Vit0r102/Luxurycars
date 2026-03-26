@@ -2,7 +2,7 @@ async function login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  const API_URL = "https://luxurycars-hhp6.onrender.com";
+  const API_URL = "https://luxurycars-ebon.vercel.app";
 
   try {
     const res = await fetch(`${API_URL}/api/auth/login`, {
