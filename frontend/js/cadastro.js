@@ -9,7 +9,7 @@ function cadastrar() {
     return;
   }
 
-  fetch("http://localhost:3000/api/auth/register", {
+  fetch("https://luxurycars-hhp6.onrender.com/api/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
