@@ -11,9 +11,7 @@ connectDB();
 // Middleware
 app.use(express.json());
 
-app.use(cors({
-  origin: "https://luxurycars-lrftqtd94-vit0r102s-projects.vercel.app"
-}))
+app.use(cors())
 
 // ROTAS API
 app.use("/api/auth", require("./routes/auth"));
