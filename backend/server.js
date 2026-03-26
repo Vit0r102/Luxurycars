@@ -1,30 +1,23 @@
 const express = require("express");
-const connectDB = require ("./config/db");
+const connectDB = require("./config/db");
 require("dotenv").config();
-const path = require("path");
-const cors = require("cors"); 
+const cors = require("cors");
+
 const app = express();
 
-// Conectar banco
+// conectar banco
 connectDB();
 
-// Middleware
+// middleware
 app.use(express.json());
 
-app.use(cors())
+// CORS 
+app.use(cors());
 
-// ROTAS API
+// rotas
 app.use("/api/auth", require("./routes/auth"));
 
-// FRONTEND
-app.use(express.static(path.join(__dirname, "../frontend")));
-
-// FALLBACK 
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/index.html"));
-});
-
-// Servidor
+// servidor
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

@@ -9,7 +9,7 @@ function cadastrar() {
     return;
   }
 
-  const API_URL = "https://luxurycars-ebon.vercel.app";
+  const API_URL = "https://luxurycars-whku.onrender.com";
 
   fetch(`${API_URL}/api/auth/register`, {
     method: "POST",
