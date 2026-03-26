@@ -3,13 +3,15 @@ async function login() {
   const password = document.getElementById("password").value;
 
   try {
-    const res = await fetch("https://luxurycars-hhp6.onrender.com/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+   const API_URL = "https://luxurycars-hhp6.onrender.com";
+
+fetch(`${API_URL}/api/auth/login`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({ email, password })
+});
 
     const data = await res.json();
 

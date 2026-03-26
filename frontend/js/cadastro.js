@@ -9,15 +9,17 @@ function cadastrar() {
     return;
   }
 
-  fetch("https://luxurycars-hhp6.onrender.com/api/auth/register", {
+  const API_URL = "https://luxurycars-hhp6.onrender.com";
+
+  fetch(`${API_URL}/api/auth/register`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({
+    body: JSON.stringify({ 
       name: nome,
-      email,
-      password
+      email, 
+      password 
     })
   })
   .then(res => res.json())
@@ -30,5 +32,9 @@ function cadastrar() {
     } else {
       alert("Erro no cadastro");
     }
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Erro ao conectar com o servidor");
   });
 }
